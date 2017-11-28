@@ -1,0 +1,42 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title User authentication
+    link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/css/materialize.min.css', integrity='sha256-KLXLCrcIWxo4m4dJaO8s49ZuGuDQapGh1LWmdM8XtnY=', crossorigin='anonymous')
+  body
+    nav
+      .nav-wrapper.green.accent-4
+        a.brand-logo.center(href='#') User authentication
+    .container
+      .row
+        h3 Login
+        div
+          form(action='/', method='post')
+            .input-field.col.s6
+              input#logemail(type='text', name='logemail', required='')
+              label(for='logemail') E-mail
+            .input-field.col.s6
+              input#logpassword(type='password', name='logpassword', required='')
+              label(for='logpassword') Password
+            button.btn.waves-effect.waves-light.green.accent-4(type='submit', name='action') Login
+      .row
+        h3 Register
+        div
+          form(action='/', method='post')
+            .input-field.col.s6
+              input#email(type='text', name='email', required='')
+              label(for='email') E-mail
+            .input-field.col.s6
+              input#username(type='text', name='username', required='')
+              label(for='username') Username
+            .input-field.col.s6
+              input#password(type='password', name='password', required='')
+              label(for='password') Password
+            .input-field.col.s6
+              input#passwordConf(type='password', name='passwordConf', required='')
+              label(for='passwordConf') Confirm password
+            button.btn.waves-effect.waves-light.green.accent-4(type='submit', name='action') Register
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/js/materialize.min.js', integrity='sha256-lz8daOJziB9AEs+1JbjG/CcDlppneKaMdCdDEb2q5nA=', crossorigin='anonymous')

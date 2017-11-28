@@ -1,0 +1,30 @@
+{
+  "name": "user-authentification",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lacoludo/user-authentification.git"
+  },
+  "author": "lacoludo",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/lacoludo/user-authentification/issues"
+  },
+  "homepage": "https://github.com/lacoludo/user-authentification#readme",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "connect-mongo": "^2.0.0",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "mongoose": "^4.13.5",
+    "nodemon": "^1.12.1",
+    "pug": "^2.0.0-rc.4"
+  }
+}
